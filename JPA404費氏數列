@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ch2 {
+    public static Scanner keyboard = new Scanner(System.in);
+
+ public static void main(String[] argv) {
+  
+  int []f= new int[10];
+  
+  f[0]=keyboard.nextInt();
+  f[1]=keyboard.nextInt();
+  
+  for(int i=2;i<f.length;i++){
+   f[i]=f[i-1]+f[i-2];
+   System.out.println(f[i]);
+  }
+
+    }
+}
