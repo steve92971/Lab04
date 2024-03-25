@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class ch2{
+
+
+    public static void main(String args[]) {
+  int sum=0;
+  int n=0;
+  int []vector = new int[10];
+  try (Scanner keyboard = new Scanner(System.in)) {
+    System.out.println("請輸入10個整數:");
+      for(int i=0;i<10;i++){
+       System.out.print("第"+(i+1)+"個整數:");
+       vector[i]=keyboard.nextInt();
+       if(vector[i]>60){
+        sum+=vector[i];
+        n++;
+       }
+      }
+}
+  System.out.println("陣列中大於60的有" + n + "個\n總合為" + sum + "\n平均值為" + (sum / (double)n));
+    }
+}
